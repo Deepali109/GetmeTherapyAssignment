@@ -7,12 +7,14 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./Register.css";
 import SignInwithGoogle from "../../SignInwithGoogle";
+import { useNavigate, Link } from "react-router-dom";
 
 function Register() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [username, setUsername] = useState("");
   const [agree, setAgree] = useState(false);
+  const navigate = useNavigate();
 
   const handleRegister = async (e) => {
     e.preventDefault();
@@ -37,6 +39,7 @@ function Register() {
       toast.success("User Registered Successfully!!", {
         position: "top-center",
       });
+      navigate("/login");
     } catch (error) {
       console.log(error.message);
       toast.error(error.message, {
@@ -110,10 +113,10 @@ function Register() {
         <SignInwithGoogle />
         <p className="forgot-password text-right">
           Have an account?{" "}
-          <a href="/login" style={{ color: " #ff9900" }}>
+          <Link to="/login" style={{ color: " #ff9900" }}>
             {" "}
             Sign in
-          </a>
+          </Link>
         </p>
 
         <ToastContainer />

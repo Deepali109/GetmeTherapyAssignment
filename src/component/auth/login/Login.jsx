@@ -6,7 +6,7 @@ import { toast } from "react-toastify";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import SignInwithGoogle from "../../SignInwithGoogle";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import "./Login.css";
 
 function Login() {
@@ -19,10 +19,11 @@ function Login() {
     try {
       await signInWithEmailAndPassword(auth, email, password);
       console.log("User logged in Successfully");
-      navigate("/postlogin");
+
       toast.success("User logged in Successfully", {
         position: "top-center",
       });
+      navigate("/postlogin");
     } catch (error) {
       console.log(error.message);
 
@@ -68,9 +69,9 @@ function Login() {
         <SignInwithGoogle />
         <p className="forgot-password text-right">
           Dont't have an account ?{" "}
-          <a href="/register" style={{ color: " #ff9900" }}>
+          <Link to="/register" style={{ color: " #ff9900" }}>
             Register
-          </a>
+          </Link>
         </p>
 
         <ToastContainer />

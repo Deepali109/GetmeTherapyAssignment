@@ -1,0 +1,116 @@
+.onboarding-container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    overflow: hidden;
+  }
+  
+  .bgbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://images.pexels.com/photos/2983098/pexels-photo-2983098.jpeg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+  }
+    .slick-slider{
+     position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .slider-container1 {
+    width: 80%;
+    max-width: 400px;
+    /* height: 280px;  */
+    background-color: rgba(255, 165, 0, 0.9);
+    border-radius: 30px;
+    padding: 10px 20px;
+    padding-bottom: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* margin-top: 9rem; */
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .slide-content {
+    text-align: center;
+  }
+  
+  .slide-content h2 {
+    color: white;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* padding:0px 10px */
+    margin-left: 6px;
+  }
+  
+  
+  .slide-content p {
+    color: white;
+    font-size: 16px;
+    padding: 0px 10px;
+    margin-bottom: 20px;
+  }
+
+  .slick-track{
+    transform: translateY(50px);
+  }
+  
+  .arrow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 20px; */
+  }
+  
+  .inner-circle {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .outer-circle {
+    width: 70px;
+    height: 70px;
+    border: 2px solid white;
+    box-shadow: 2px 2px 2px 2px #f5bc66;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    /* border: 5px solid rgba(255, 153, 0, 0.5); */
+  }
+  
+  .arrow {
+    font-size: 29px;
+    color: orange;
+  }
+  
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .skip,
+  .next {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  

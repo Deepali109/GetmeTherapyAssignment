@@ -1,0 +1,98 @@
+
+
+.postlogin-container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+    background-image: url('https://images.pexels.com/photos/2983098/pexels-photo-2983098.jpeg');
+    background-size: cover;
+    background-position: center;
+    /* z-index: -1; */
+  }
+  
+   /* .success-outer-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://images.pexels.com/photos/2983098/pexels-photo-2983098.jpeg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; 
+   }  */
+  .success-container {
+    width: 80%;
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+    z-index: 1; /* Ensure it is above other elements */
+  }
+  
+  .icon-container {
+    margin-top: 20px;
+    border: 5px solid rgba(255, 153, 0, 0.5);
+    border-radius: 50%;
+    padding: 8px;
+  }
+  
+  .icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #ff9900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .checkmark {
+    font-size: 36px;
+    color: white;
+    z-index: 1;
+  }
+  
+  h3 {
+    color: #333;
+    margin: 20px 0;
+  }
+  
+  .success-container .tracking-button,
+  .success-container .logout-button {
+    width: 80%;
+    max-width: 300px;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    margin: 10px 0;
+    background-color: #f5f5f5;
+    color: #9b9b9b;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .success-container .tracking-button:hover,
+  .success-container .logout-button:hover {
+    background-color: #ff9900;
+    color: white;
+  }
+  

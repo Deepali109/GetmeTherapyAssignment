@@ -1,0 +1,11 @@
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  #speed-slider {
+    margin: 0 10px;
+  }
+  

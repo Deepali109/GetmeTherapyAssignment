@@ -1,0 +1,28 @@
+.tracking-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../image/image1.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;   
+  }
+  
+  .clock-container {
+    margin-bottom: 0px;
+  }
+  
+  .controls {
+    display: flex;
+    flex-direction: column;
+    align-items: centermargin
+  }
+  
+  h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  

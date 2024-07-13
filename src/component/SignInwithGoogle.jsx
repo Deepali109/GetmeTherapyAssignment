@@ -6,8 +6,8 @@ import { setDoc, doc } from "firebase/firestore";
 import { useNavigate, Link } from "react-router-dom";
 
 function SignInwithGoogle() {
+  const navigate = useNavigate();
   function googleLogin() {
-    const navigate = useNavigate();
     const provider = new GoogleAuthProvider();
 
     signInWithPopup(auth, provider).then(async (result) => {

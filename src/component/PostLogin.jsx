@@ -10,7 +10,7 @@ const PostLogin = () => {
   async function handleLogout() {
     try {
       await auth.signOut();
-      window.location.href = "/login";
+      navigate("/login");
       console.log("User logged out successfully!");
     } catch (error) {
       console.error("Error logging out:", error.message);
